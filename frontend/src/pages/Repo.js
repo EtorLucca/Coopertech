@@ -1,14 +1,11 @@
 import React from "react";
 
 export default function Repo({ data }) {
-  const type = typeof(data);
   return (
     <div className="repo">
       { 
         !data ? 
-          <p>Usuário não encontrado</p> 
-        : 
-          type === "string" ? <p className="h1">{data}</p>
+          ""
         : 
         data.map((id) => (
           <div key={id.name} className="card">

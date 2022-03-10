@@ -7,10 +7,9 @@ export default function Home() {
     "https://cdn-icons-png.flaticon.com/512/149/149071.png"
   );
   const [userData, setUserData] = useState();
-  const type = typeof userData;
 
   function handleSubmit() {
-    if (userName.length > 2) {
+    if (userName.length > 3) {
       fetch(`https://api.github.com/users/${userName}/repos`)
         .then((res) => {
           if (res.ok) {
@@ -53,7 +52,7 @@ export default function Home() {
           }}
         />
         <p className={userData === null ? "showError" : "hide"}>
-          {userData === null ? "*Usuário não encontrado" : ""}
+          {userName.length <= 3 ? "*Por favor insira um usuário válido" : userData === null ? "*Usuário não encontrado" : ""}
         </p>
         <button
           className="search"

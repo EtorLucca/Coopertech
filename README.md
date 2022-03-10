@@ -43,7 +43,7 @@ Passo a passo para visualização do projeto
   - Importar o arquivo coopertech.sql.zip<br>
 
 - Digitar o comando:<br>
-<code>
+    <code>
     npm start
     </code><br>
   ou<br>
