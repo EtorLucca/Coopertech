@@ -1,0 +1,150 @@
+:root {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 30%;
+}
+
+.username {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 5px 10px;
+  margin: 20px 0 5px 0;
+  width: 150px;
+}
+
+.username:hover, .username:focus {
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+}
+
+.showError {
+  display: block;
+  color: #FF0000;
+  font-size: 0.7rem;
+}
+
+.data {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+  margin: auto 0 auto 100px;
+}
+
+.hide {
+  display: none;
+}
+
+.perfil {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin: 30px 0 0 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.search {
+  background-color: #0D6EFD;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  width: 40%;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.search:hover {
+  background-color: #0b59ce;
+  transition-duration: 300ms;
+}
+
+.repository, .stars, .description {
+  background-color: #fafafa;
+  border: none;
+  text-decoration: none;
+  padding: 0 8px;
+  width: 90%;
+  overflow: hidden;
+  resize: none;
+  line-height: 15px;
+}
+
+.repository:focus, .stars:focus, .description:focus {
+  border: none;
+}
+
+.repository {
+  margin-top: 10px;
+}
+
+.description {
+  margin-bottom: 15px;
+}
+
+.url {
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #0D6EFD;
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  width: 55%;
+  align-self: center;
+}
+
+.url:hover {
+  background-color: #0b59ce;
+  transition-duration: 300ms;
+}
+
+.repo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.repoList {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #fafafa;
+  box-shadow: #00000010 5px 5px 5px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 150px;
+  margin: 5px;
+  padding: 10px;
+}
