@@ -1,3 +1,8 @@
+<h1>Busca de repositórios Github por usuário.</h1>
+
+Projeto realizado durante etapa de processo seletivo - Coopercarga.
+
+<hr>
 Passo a passo para visualização do projeto
 
 - Clonar o repositório usando o comando:
